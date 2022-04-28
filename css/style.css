@@ -36,6 +36,11 @@ button{
      border-style: groove;
      margin-top: 30px;
 }
+button:active{
+     background-color: gold;
+     color: green;
+     font-size: 30px;
+}
 div {
      text-align: center;
 }
