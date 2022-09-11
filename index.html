@@ -10,17 +10,23 @@
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
+
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		
 			<section>
-			  	<h1>Random ROCK PAPER SCISSOR generator</h1>
-			  	<span>for people like me, who suck at playing ROCK PAPER SCISSOR...</span>
-			  	<button>READY? GO!</button>
+			  	<h1>Random ROCK PAPER SCISSORS generator</h1>
+			  	<span>for people like me, who suck at playing ROCK PAPER SCISSORS...</span>
+			  	<button class="start">READY? GO!</button>
 				<div>
 					<img src="">
 				</div>
+				<p>ROUND <span class="round">0</span>: <span class="score"></span></p>
+				<button type="button" class="result" value="win" onclick="score(this.value)">I WON :D</button>
+				<button type="button" class="result" value="drew" onclick="score(this.value)">DREW :/</button>
+				<button type="button" class="result" value="lose" onclick="score(this.value)">I LOSE :(</button>
+				
 			</section>
 		
 		<script type="text/javascript" src="js/main.js"></script>

@@ -1,5 +1,10 @@
 
-document.querySelector('button').onclick = randomRPC
+let round = 0
+let finalScore = 0
+
+document.querySelector('.start').onclick = randomRPC
+
+
 
 function randomRPC() {
     let rpc = Math.random() ;
@@ -11,4 +16,17 @@ function randomRPC() {
         document.querySelector('img').src = "img/scissor.webp"
     }
 
+}
+
+function score(result){
+    round += 1
+    result === 'win' ? finalScore += 1 :
+    result === 'lose' ? finalScore -= 1 : finalScore
+    const displayScore = document.querySelector('.score')
+    let displayResult = finalScore > 0 ? 'I am winning!' :
+    finalScore < 0 ? 'Oh no I am losing' : 'We are tight'
+    displayScore.textContent = displayResult
+
+    const displayRound = document.querySelector('.round')
+    displayRound.textContent = round
 }
