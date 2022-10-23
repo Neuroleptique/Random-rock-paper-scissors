@@ -1,5 +1,5 @@
 ## Random-rock-paper-scissors
-A random rock paper scissors generator for people like me, who suck at playing ROCK PAPER SCISSORS. 
+A random rock-paper-scissors generator for brainless player like me.
 
 **Link to project:** https://neuroleptique.github.io/Random-rock-paper-scissor/
 
@@ -11,4 +11,4 @@ You are also able to track your score and round counts.
 **Tech used:** HTML, CSS, JavaScript
 
 ## Lessons Learned
-DOM interaction with onclick and sent button value to client-side JavaScript
+DOM interaction with onclick and sent button value to client-side JavaScript, shake effet and rainbow text in CSS
